@@ -33,6 +33,8 @@ std::vector<BenchmarkReporter::Run> ComputeStats(
 BENCHMARK_EXPORT
 double StatisticsMean(const std::vector<double>& v);
 BENCHMARK_EXPORT
+double StatisticsMin(const std::vector<double>& v);
+BENCHMARK_EXPORT
 double StatisticsMedian(const std::vector<double>& v);
 BENCHMARK_EXPORT
 double StatisticsStdDev(const std::vector<double>& v);

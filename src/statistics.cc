@@ -35,6 +35,11 @@ double StatisticsMean(const std::vector<double>& v) {
   return StatisticsSum(v) * (1.0 / v.size());
 }
 
+double StatisticsMin(const std::vector<double>& v) {
+  if (v.empty()) return 0.0;
+  return *std::min_element(v.begin(), v.end());
+}
+
 double StatisticsMedian(const std::vector<double>& v) {
   if (v.size() < 3) return StatisticsMean(v);
   std::vector<double> copy(v);

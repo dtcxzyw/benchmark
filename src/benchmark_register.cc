@@ -222,6 +222,7 @@ Benchmark::Benchmark(const char* name)
       setup_(nullptr),
       teardown_(nullptr) {
   ComputeStatistics("mean", StatisticsMean);
+  ComputeStatistics("min", StatisticsMin);
   ComputeStatistics("median", StatisticsMedian);
   ComputeStatistics("stddev", StatisticsStdDev);
   ComputeStatistics("cv", StatisticsCV, kPercentage);
